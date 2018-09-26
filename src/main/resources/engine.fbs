@@ -1,0 +1,11 @@
+namespace me.yorick.poc.flatbuffers;
+
+enum Side: byte {Ask,Bid}
+
+table Order{
+	side:Side;
+	price:double;
+	qty:double;
+    symbol:string;
+    exchange:string;
+}
